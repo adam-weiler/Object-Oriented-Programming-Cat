@@ -5,7 +5,11 @@ class Cat(): #A Cat class.
         self.meal_time = meal_time
 
     def __str__(self): #Returns a meaningful string that describes the instance.
-        return f'{self.name} likes to eat {self.preferred_food} at {self.meal_time}:00.'
+        # return f'{self.name} likes to eat {self.preferred_food} at {self.meal_time}:00.'
+
+        return f"Cat instance:name={self.name} preferred_food={self.preferred_food} meal_time={self.meal_time}"
+
+
 
     def eats_at(self): #An instance method that converts a 24-hour time into a 12-hour time. ie: 13 becomes 1pm.
         if (self.meal_time == 0):
